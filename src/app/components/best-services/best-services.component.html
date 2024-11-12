@@ -1,0 +1,25 @@
+<div class="services">
+   
+    <div class="services_header">
+        <p class="services_header_txt">
+            CATEGORY
+        </p>
+        
+        <h2 class="services_header_title">
+            We Offer Best Services
+        </h2>
+    </div>
+
+    <img class="services_decoration" src="./assets/DecorationServices.png" alt="DecorationServices">
+
+    <div class="services_main">
+        
+        <div class="services_main_box" *ngFor="let serviceItem of serviceList">
+            <img class="services_main_box_icon" [src]="serviceItem.img" alt="SatelliteIcon" [ngStyle]="{width: '9.2rem', heigth: '7.8rem'}" loading="lazy">
+            <h2 class="services_main_box_title"> {{ serviceItem.title }} </h2>
+            <p class="services_main_box_txt"> {{ serviceItem.txt }} </p>
+        </div>
+        
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+@import 'variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    
+    &_logo img {
+        // min-width: 11.4rem;
+        // height: auto;
+        cursor: pointer;
+    }
+
+    &_menu {
+        display: flex;
+        gap: 5.5rem;
+        
+        &_item {
+            display: flex;
+            align-items: center;
+
+            &.sign_up_styles {
+                border: .1rem solid #212832;
+                border-radius: .5rem;
+                padding: .9rem 2.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #F1A501;
+                    transition: 0.3s;
+                }
+            }
+
+            // ampersand;
+
+            &_link {
+                font-size: 1.7rem;
+                font-family: $font-open;
+                font-weight: bold;
+                color: #212832;
+                
+                &:hover {
+                    color: #F1A501;
+                    transition: 0.3s;
+                }
+
+                &.link_sign_up_styles {
+
+                    &:hover {
+                        color: $font-color-primary;
+                    }
+                }
+            }
+        }
+
+    }
+}

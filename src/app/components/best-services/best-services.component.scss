@@ -1,0 +1,91 @@
+@import 'variables';
+
+.services {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_header {
+        text-align: center;
+        
+        &_txt {
+            font-family: $font-poppins;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $font-color-secundary;
+        }
+
+        &_title {
+            font-family: $font-volk;
+            font-size: 5rem;
+            font-weight: 700;
+           
+            margin-top: 1rem;
+        }
+    }
+
+    &_decoration {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        z-index: -1;
+        width: 15.3rem;
+        height: auto;
+    }
+
+    &_main {
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem ;
+        gap: 5rem;
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 23rem;
+            border-radius: 3.6rem;
+            padding: 2rem;
+            transition: .3s ease;
+            cursor: pointer;
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            // &:hover {
+            //     cursor: pointer;
+            //     padding: 2rem;
+            //     border-radius: 3.6rem;
+            //     background-color: red;
+            //     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+            // }
+
+            // &_icon {
+
+            // }
+
+            &_title {
+                font-family: $font-poppins;
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 3rem;
+                color: $font-color-primary;
+            }
+
+            &_txt {
+                font-family: $font-poppins;
+                font-weight: 500;
+                margin-top: 1.5rem;
+                color: $font-color-secundary;
+                max-width: 18rem;
+                text-align: center;
+            }
+        }
+        
+    }
+}
