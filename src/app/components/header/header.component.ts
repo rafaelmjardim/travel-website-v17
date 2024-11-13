@@ -14,27 +14,25 @@ export class HeaderComponent implements OnInit {
   menuList: any[] = [
     {
       name: 'Services',
-      url: '/services'
+      id: '#best-services'
     },
     {
       name: 'Destinations',
-      url: '/destinations'
+      id: '#destinations'
     },
     {
       name: 'Bookings',
-      url: '/bookings'
+      id: '#bookings'
     },
     {
       name: 'About',
-      url: '/about'
+      id: '#about'
     },
     {
       name: 'Login',
-      url: '/login'
     },
     {
       name: 'Sign Up',
-      url: '/signup',
       class: 'sign_up_styles'
     },
     {
