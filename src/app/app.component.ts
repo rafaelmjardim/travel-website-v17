@@ -5,6 +5,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { DestinationsComponent } from './components/destinations/destinations.component';
 import { BestServicesComponent } from './components/best-services/best-services.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
+import { AboutComponent } from './components/about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import { BestServicesComponent } from './components/best-services/best-services.
     FooterComponent,
     HomeComponent,
     DestinationsComponent,
-    BestServicesComponent
+    BestServicesComponent,
+    BookingsComponent,
+    AboutComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
